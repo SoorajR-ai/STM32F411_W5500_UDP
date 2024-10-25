@@ -1,3 +1,36 @@
+/*
+ * Project: W5500 UDP Communication with STM32
+ * Author : Sooraj R
+ * Date   : 10/25/2024
+ *
+ * Description:
+ * This program demonstrates setting up UDP communication on an STM32
+ * microcontroller using the W5500 Ethernet module. The STM32 initializes the W5500,
+ * opens a UDP socket, and transmits and receives messages via UDP.
+ * Debugging messages are sent via UART for easy monitoring.
+ *
+ * Requirements:
+ * - STM32CubeIDE (for building and flashing)
+ * - W5500 Module (SPI connection to STM32)
+ * - UART-to-USB converter (optional for UART debugging)
+ *
+ * Connections:
+ * - SPI (STM32 to W5500):
+ *     - SPI_MOSI (PA7) <--> MOSI
+ *     - SPI_MISO (PA6) <--> MISO
+ *     - SPI_SCK  (PA5) <--> SCLK
+ *     - SPI_CS   (PA4) <--> SCS
+ * - Other W5500 Pins:
+ *     - 3v3 <--> VCC (W5500)
+ *     - GND <--> GND (W5500)
+ * - UART (for Debugging):
+ *     - TX (PA2) <--> RX on UART-to-USB converter (PC)
+ *
+ * Library Link: https://github.com/Wiznet/ioLibrary_Driver.git
+ * W5500 Module: https://robu.in/product/w5500-tcp-ip-spi-to-lan-ethernet-interface-spi-to-lan-ethernet-converter/?gad_source=1&gclid=CjwKCAjwg-24BhB_EiwA1ZOx8gmG97EPR4Eeb_cDfobfCvqw8VmkLKJ5izCyKA48QGf5VNaT3iyzrRoCoS0QAvD_BwE
+ */
+
+
 
 #include "main.h"
 
