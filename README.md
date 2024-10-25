@@ -36,4 +36,4 @@ This repository demonstrates how to establish and manage UDP communication on an
 - Debugging messages are output through UART for easy monitoring.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License
